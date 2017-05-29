@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sinwan.shopkeeper.MenuActivity">
+
+    <Button
+        android:text="Add jobs"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bStock"
+        android:layout_alignLeft="@+id/bStock"
+        android:layout_alignStart="@+id/bStock"
+        android:layout_marginTop="48dp"
+        android:id="@+id/bJobs" />
+
+    <Button
+        android:text="View Bookings"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bBooking"
+        android:layout_below="@+id/bJobs"
+        android:layout_alignLeft="@+id/bJobs"
+        android:layout_alignStart="@+id/bJobs"
+        android:layout_marginTop="42dp" />
+
+    <Button
+        android:text="Update Stock"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/bStock"
+        android:layout_width="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="job applications"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/bApplications"
+        android:layout_below="@+id/bBooking"
+        android:layout_alignLeft="@+id/bBooking"
+        android:layout_alignStart="@+id/bBooking" />
+
+    <Button
+        android:id="@+id/bNew"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bApplications"
+        android:layout_alignStart="@+id/bApplications"
+        android:layout_below="@+id/bApplications"
+        android:layout_marginTop="13dp"
+        android:text="ADD NEW PRODUCT" />
+</RelativeLayout>

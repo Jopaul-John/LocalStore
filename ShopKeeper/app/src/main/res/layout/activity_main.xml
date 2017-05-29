@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WO STORES"
+        android:id="@+id/textPnnm"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f777f114"
+        android:textSize="35dp" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Login"
+        android:id="@+id/textLogin"
+        android:textSize="30dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/abc"
+        android:layout_alignTop="@+id/textPnnm"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/main_name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_name"
+        android:hint="Name"
+        android:layout_above="@+id/main_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/main_password"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_alignEnd="@+id/main_password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/main_password"
+        android:hint="Password"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/rememberme"
+        android:layout_alignParentLeft="true"
+        android:singleLine="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:onClick="main_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/main_login"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/textLogin"
+        android:layout_toStartOf="@+id/textLogin" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attempts Left:"
+        android:id="@+id/textAttempts"
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/main_login"
+        android:layout_alignStart="@+id/main_login"
+        android:layout_marginBottom="32dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCount"
+        android:textSize="25dp"
+        android:text="3"
+        android:layout_alignTop="@+id/textAttempts"
+        android:layout_alignRight="@+id/textPnnm"
+        android:layout_alignEnd="@+id/textPnnm"
+        android:layout_marginTop="0dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remeber Me"
+        android:id="@+id/rememberme"
+        android:layout_above="@+id/main_login"
+        android:checked="false"
+        android:textSize="20dp" />
+
+</RelativeLayout>

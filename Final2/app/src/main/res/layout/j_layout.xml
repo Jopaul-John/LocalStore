@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:src="@drawable/image1"
+        android:id="@+id/imageView"
+        android:layout_marginLeft="2dp"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_weight="0.91" />
+
+    <TextView
+        android:text="Post: Sales Manager                                                                              Qualification:Any degree                                                                                               Salary:15000/month                                                                       Shop Name:Lenovo Service Centre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:text="Apply job"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5" />
+
+    <TextView
+        android:text="Post:Sales Assistant                                                                              Qualification:Any degree                                                                                               Salary:11000/month                                                              Shop Name:Royal furniture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="Apply job"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button8" />
+
+    <TextView
+        android:text="Post: Sales (Male)                                                                              Qualification:12th                                                                                               Salary:8000/month                                                                             Shop Name:KMK Textiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
+
+    <Button
+        android:text="Apply job"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button9" />
+
+    <TextView
+        android:text="Post: Sales (Female)                                                                              Qualification:12th                                                                                               Salary:8000/month                                                                Shop Name: Excel Electricals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
+
+    <Button
+        android:text="Apply job"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button10" />
+
+
+</LinearLayout>

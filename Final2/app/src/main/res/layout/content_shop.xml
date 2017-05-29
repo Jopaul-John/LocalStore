@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_shop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sinwan.final2.ShopActivity"
+    tools:showIn="@layout/app_bar_shop">
+
+<android.support.v7.widget.RecyclerView
+android:id="@+id/shopPriceList"
+android:layout_height="match_parent"
+android:layout_width="match_parent"
+android:clipToPadding="false"
+android:layout_below="@+id/appbar"
+android:paddingTop="20dp"
+app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</RelativeLayout>
